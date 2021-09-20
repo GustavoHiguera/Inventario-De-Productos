@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Inventario</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,200&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>Inventario de Productos</h1>
+    <p class="azul">Inventario de 20 productos </p>
+  </div>
+
+  <div class="content">
+    <div>
+      <h2>Producto:</h2>
+      <div class="content-info">
+        <form>
+          <div class="field">
+            <label>Código:</label>
+            <input id="code" type="number" size=35>
+          </div>
+          <div class="field">
+            <label>Nombre:</label>
+            <input id="name" type="text" size=35>
+          </div>
+          <div class="field">
+            <label>Costo:</label>
+            <input id="cost" type="number">
+          </div>
+          <div class="field">
+            <label>Cantidad:</label>
+            <input id="amount" type="number">
+          </div>
+          <div class="field">
+            <input id="btnAdd" type="button" value="Añadir">
+          </div>
+          <div class="field">
+            <input id="btnList" type="button" value="Listar">
+          </div>
+          <div class="field">
+            <input id="btnInverseList" type="button" value="Listar Inverso">
+          </div>
+          <div class="field">
+          <div class="field">
+            <input id="btnSearch" type="button" value="Buscar">
+          </div>
+          <div class="field">
+            <input id="btnDelete" type="button" value="Eliminar">
+          </div>
+          <div class="field">
+            <label>Posición para insertar:</label>
+            <input id="insertCode" type="number" size=35>
+          </div>
+          <div class="field">
+            <input id="btnInsert" type="button" value="Insertar">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <h2>Detalles:</h2>
+      <div class="content-info">
+        <table id="details">
+          <tr>
+            <div id="list"></div>
+          </tr>
+          
+            
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="main.js" type="module"></script>
+  
+</body>
+
+</html>
